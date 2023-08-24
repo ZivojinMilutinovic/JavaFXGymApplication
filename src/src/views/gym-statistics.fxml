@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.controllers.GymStatisticsController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Manage">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToUsers" text="Users" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToMembers" text="Members" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToEquipment" text="Equipment" />
+               </items>
+            </Menu>
+
+         </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox alignment="CENTER_LEFT" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="78.0" prefWidth="386.0" text="Gym statistics:">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="numOfEmployees" prefHeight="46.0" prefWidth="309.0" text="Number of employees:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="numOfMembers" prefHeight="78.0" prefWidth="310.0" text="Number of members:">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="numOfGymMemberships" prefHeight="54.0" prefWidth="391.0" text="Number of paid gym memberships:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalIncome" prefHeight="62.0" prefWidth="319.0" text="Total income:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
